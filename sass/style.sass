@@ -1,0 +1,1109 @@
+@charset "utf-8"
+.tcon
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	border: none
+	cursor: pointer
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+	-webkit-justify-content: center
+	-ms-flex-pack: center
+	justify-content: center
+	-webkit-align-items: center
+	-ms-flex-align: center
+	align-items: center
+	height: 40px
+	transition: 0.3s
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	width: 40px
+	background: transparent
+	outline: none
+	-webkit-tap-highlight-color: transparent
+	-webkit-tap-highlight-color: transparent
+	> *
+		display: block
+	&:hover, &:focus
+		outline: none
+	&::-moz-focus-inner
+		border: 0
+
+.tcon-menu__lines
+	display: inline-block
+	height: 5.71429px
+	width: 40px
+	border-radius: 2.85714px
+	transition: 0.3s
+	background: #21AC37
+	position: relative
+	&::before, &::after
+		display: inline-block
+		height: 5.71429px
+		width: 40px
+		border-radius: 2.85714px
+		transition: 0.3s
+		background: #21AC37
+		content: ''
+		position: absolute
+		left: 0
+		-webkit-transform-origin: 2.85714px center
+		transform-origin: 2.85714px center
+		width: 100%
+	&::before
+		top: 10px
+	&::after
+		top: -10px
+
+.tcon-transform .tcon-menu__lines
+	-webkit-transform: scale3d(0.8, 0.8, 0.8)
+	transform: scale3d(0.8, 0.8, 0.8)
+
+.tcon-menu--xbutterfly
+	width: auto
+	.tcon-menu__lines
+		&::before, &::after
+			-webkit-transform-origin: 50% 50%
+			transform-origin: 50% 50%
+			transition: top .3s .6s ease, -webkit-transform .3s ease
+			transition: top .3s .6s ease, transform .3s ease
+	&.tcon-transform .tcon-menu__lines
+		background: transparent
+		&::before, &::after
+			top: 0
+			transition: top .3s ease, -webkit-transform .3s .5s ease
+			transition: top .3s ease, transform .3s .5s ease
+			width: 40px
+		&::before
+			-webkit-transform: rotate3d(0, 0, 1, 45deg)
+			transform: rotate3d(0, 0, 1, 45deg)
+		&::after
+			-webkit-transform: rotate3d(0, 0, 1, -45deg)
+			transform: rotate3d(0, 0, 1, -45deg)
+
+.tcon-visuallyhidden
+	border: 0
+	clip: rect(0 0 0 0)
+	height: 1px
+	margin: -1px
+	overflow: hidden
+	padding: 0
+	position: absolute
+	width: 1px
+	&:active, &:focus
+		clip: auto
+		height: auto
+		margin: 0
+		overflow: visible
+		position: static
+		width: auto
+
+.slider
+	.slick-arrow
+		img
+			width: 100%
+.slick-slide img
+	width: 100%
+
+.mobile
+	display: none
+.mt5
+	margin-top: 5px
+.zoom-desc
+	display: none
+
+
+header
+	background: url(../images/headertoppic.jpg) repeat-x
+	height: 125px
+	.container-fluid
+		max-width: 1300px
+		background: #fff url(../images/headerpic.png) no-repeat
+		background-size: contain
+		.item
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+			align-items: center
+			font-size: 12px
+			max-width: 1006px
+			margin: auto
+			&:before
+				display: none
+			&:after
+				display: none
+			.item-box
+				margin: 25px 0px 10px
+				.col-item
+					border-right: 1px solid #000
+					padding: 0px 10px
+					float: left
+					&:last-child
+						border: 0
+					a
+						color: #303030
+						text-decoration: none
+			.menu
+				padding-bottom: 5px
+				.col-menu
+					border-right: 1px solid rgba(33,172,55,0.5)
+					padding: 0px 10px
+					float: left
+					font-size: 18px
+					position: relative
+					&:hover
+						ul
+							display: block
+					&:first-child
+						border-left: 1px solid rgba(33,172,55,0.5)
+					&:before
+						content: url(../images/menuicon.png)
+						margin-right: 9px
+						vertical-align: middle
+					a
+						color: #303030
+						text-decoration: none
+						line-height: 25px
+						
+								
+					ul
+						position: absolute
+						left: 0
+						top: 25px
+						background-color: rgba(0,0,0,0.8)
+						z-index: 100
+						width: 100%
+						padding: 5px 0px 15px
+						display: none
+						border-top: 5px solid #fff
+						li
+							text-align: center
+							&:hover
+								background-color: rgba(256,256,256,0.2)
+							a
+								color: #fff
+								font-size: 16px
+								line-height: 35px
+								
+								
+
+.content
+	.container-fluid
+		position: relative
+		.maincontent
+			max-width: 1300px
+			margin: auto
+			font-size: 0
+			margin-bottom: 45px
+			text-align: center
+			.leftad
+				display: inline-block
+				border: 1px solid #21AC37
+				border-width: 0px 0px 5px 0px
+
+				
+				.toptitle
+					font-size: 13px
+					text-align: center
+					color: #fff
+					line-height: 25px
+					background-color: #21AC37
+					border-radius: 5px 5px 0px 0px
+				.adrecommend
+					border: 1px solid #21AC37
+					border-width: 0px 1px 0px 1px
+					padding-top: 5px
+					&:last-child
+						padding-bottom: 7px
+					img
+						display: block
+						margin: auto
+					
+					
+			.centercontent
+				display: inline-block
+				width: calc(100% - 340px)
+				vertical-align: top
+				margin: 0px 20px
+				text-align: left
+				.topbanner,.bottombanner
+					margin: 0px -5px
+					&:after
+						content: ""
+						display: block
+						clear: both
+					.pic
+						padding: 0px 5px
+						
+						img
+							width: 100%
+							display: block
+				.bottombanner
+					margin: 25px -5px 10px
+				.textarea
+					margin: 0px -5px
+					.text
+						padding: 0px 5px
+						.texttitle
+							font-size: 16px
+							background-color: #21AC37
+							color: #fff
+							line-height: 39px
+							border: 2px solid #77E87A
+							border-radius: 5px
+							padding: 0 10px
+							&:before
+								content: "★"
+								margin-right: 5px
+						a
+							text-decoration: none
+							cursor: text
+							
+							p
+								font-size: 16px
+								line-height: 24px
+								margin-top: 3px
+								font-weight: 600
+								color: #000
+				.breadcrumb
+					font-size: initial
+					background-color: #fff
+					margin: 0 -10px
+					padding: 8px 10px
+					padding-top: 0
+					text-align: left
+					&:before
+						content: "★"
+						margin-right: 5px
+						color: #21AC37
+						vertical-align: middle
+						
+					li
+						a
+							color: #000
+							font-size: 12px
+					>li+li
+						color: #000
+						font-size: 12px
+						&:before
+							content: ">"
+							color: #000
+				.travel_goods
+					margin: 0 -5px
+					&:after
+						content: ""
+						display: block
+						clear: both
+					.pic
+						padding: 0 5px
+						position: relative
+						margin-bottom: 15px
+						max-height: 500px
+						overflow: hidden
+						img
+
+						span
+							display: inline-block
+							font-size: 25px
+							color: #fff
+							font-weight: bold
+							position: absolute
+							left: 50%
+							top: 50%
+							transform: translate(-50%,-50%)
+							line-height: 30px
+							&:before
+								content: url(../images/mainicon.png)
+								margin-right: 9px
+								vertical-align: middle
+				.showlist
+					.listbox
+						font-size: 16px
+						margin: 0 12px
+						&:after
+							content: ""
+							display: block
+							clear: both
+						.box
+							border: 1px solid #23AC35
+							border-radius: 10px
+							text-align: center
+							width: calc((100% - 32px) / 3)
+							margin-bottom: 15px
+							padding: 0
+							&:nth-child(3n+2)
+								margin: 0px 16px
+							.goodspic
+								margin-top: 20px
+								img
+									display: block
+									margin: auto
+									max-width: 176px
+									max-height: 176px
+							.name
+								text-align: center
+								margin: auto
+								margin-top: 5px
+								margin-bottom: 10px
+								max-width: 230px
+								line-height: 24px
+								min-height: 72px
+								a
+									color: #000
+								
+							.price
+								font-size: 12px
+								margin: auto
+								margin-bottom: 10px
+								max-width: 230px
+								
+								.original
+									text-decoration: line-through
+									margin-right: 5px
+								.discount
+									font-size: 16px
+									span
+										color: #ED0606
+							.intro
+								background-color: #23AC35
+								color: #fff
+								border-radius: 72px
+								width: 143px
+								max-width: 176px
+								margin-bottom: 20px
+				.goodscontent
+					
+					.topcontent
+						display: -webkit-flex
+						display: -moz-flex
+						display: -ms-flex
+						display: -o-flex
+						display: flex
+						// justify-content: space-between
+						margin: 0
+						margin-bottom: 40px
+						.zoom-section
+							margin-right: 20px
+							.zoom-small-image
+								a
+									img
+										border: 1px solid #C9C9C9
+										width: 360px
+										height: 360px
+						.goodsdescribe
+							width: calc(100% - 380px)
+							.describe
+								
+								.title
+									font-size: 20px
+									font-weight: bold
+									border-bottom: 1px solid #C9C9C9
+									line-height: 30px
+									margin-bottom: 10px
+								.intro
+									font-size: 16px
+									line-height: 24px
+									border-bottom: 1px solid #C9C9C9
+									margin-bottom: 10px
+									min-height: calc(360px - 150px)
+								.price
+									font-size: 14px
+									.market_price
+										text-decoration: line-through
+									.network_price
+										font-size: 20px
+										margin-bottom: 10px
+										span
+											font-size: 36px
+											color: #ED0606
+											line-height: 30px
+								.btn
+									background: -moz-linear-gradient(180deg, #FFBE00 50%, #FF6000 100%)/* FF3.6+ */
+									background: -webkit-gradient(linear, 180deg, color-stop(50%, FFBE00), color-stop(100%, FF6000))/* Chrome,Safari4+ */
+									background: -webkit-linear-gradient(180deg, #FFBE00 50%, #FF6000 100%)/* Chrome10+,Safari5.1+ */
+									background: -o-linear-gradient(180deg, #FFBE00 50%, #FF6000 100%)/* Opera 11.10+ */
+									background: -ms-linear-gradient(180deg, #FFBE00 50%, #FF6000 100%)/* IE10+ */
+									filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1') /* for IE */
+									background: linear-gradient(180deg, #FFBE00 50%, #FF6000 100%)/* W3C */
+									border: 0
+									color: #fff
+									width: 210px
+									height: 43px
+									line-height: 31px
+									font-size: 22px
+					.row
+						.tab_wrapper
+							> ul
+								border-bottom: 1px solid #C9C9C9
+								li
+									font-size: 14px
+									color: #000
+									background-color: #EAEAEA
+									border-top: 1px solid #C9C9C9
+								.active
+									border-color: #C9C9C9
+									background-color: #fff
+						.content_wrapper
+							border: 1px solid #C9C9C9
+							border-top: 0
+							.tab_content
+								font-size: 16px
+								line-height: 24px
+								min-height: 225px
+						.tab
+							width: 100%
+							ul.nav
+								display: -webkit-flex
+								display: -moz-flex
+								display: -ms-flex
+								display: -o-flex
+								display: flex
+								border-bottom: 1px solid #C9C9C9
+								li
+									font-size: 14px
+									width: 119px
+									height: 29px
+									background-color: #EAEAEA
+									line-height: 29px
+									text-align: center
+									cursor: pointer
+									border: solid #C9C9C9
+									border-width: 1px 1px 0px 1px
+									position: relative
+									border-bottom: 0px
+								.active
+									background-color: #fff
+									border-width: 1px 1px 0px 1px !important
+									&:after
+										content: ""
+										position: absolute
+										bottom: -1px
+										height: 1px
+										left: 0
+										background: #fff
+										width: 100%
+							.tabcontainer
+								font-size: 16px
+								border: solid #C9C9C9
+								border-width: 0px 1px 1px 1px
+								padding: 20px 0px 0px 15px
+								.title
+									display: none
+									
+								.showcontent
+									line-height: 24px
+									min-height: 225px
+								#show02
+									display: none
+								#show03
+									display: none
+								#show04
+									display: none
+								#show05
+									display: none
+					.bottomcontent
+						margin: 0
+						.interest
+							font-size: 18px
+							margin-bottom: 10px
+							border-left: 11px solid #23AC35
+							padding: 3px 0px 3px 5px
+						.showlist
+							.listbox
+								margin: 0
+			.rightad
+				@extend .leftad
+		.contact
+			text-align: center
+			.centercontent
+				.form-horizontal
+					.form-group
+						font-size: 16px
+						display: -webkit-flex
+						display: -moz-flex
+						display: -ms-flex
+						display: -o-flex
+						display: flex
+						margin-bottom: 0
+						border-bottom: 1px dashed rgba(35,172,53,0.8)
+						&:nth-child(6)
+							border-bottom: 0px
+							margin-bottom: 20px
+						&:last-child
+							border-bottom: 0px
+						.name
+							line-height: 69px
+							width: 145px
+							background-color: rgba(35,172,53,0.1)
+							label
+								&:before
+									content: url(../images/menuicon.png)
+									margin-right: 10px
+									vertical-align: middle
+						.btn
+							max-width: 400px
+							background-color: #23AC35
+							border-radius: 0px
+							color: #fff
+							margin: auto
+							width: 30%
+									
+								
+								
+						.inputarea
+							width: calc(100% - 145px)
+							padding-left: 25px
+							margin: 17px 0
+							display: -webkit-flex
+							display: -moz-flex
+							display: -ms-flex
+							display: -o-flex
+							display: flex
+							align-items: center
+							.form-control
+								width: 80%
+							img
+								margin-right: 10px
+							.code
+								width: calc(80% - 110px)
+		.topbtn
+			position: absolute
+			bottom: 10px
+			right: 10px
+			cursor: pointer
+		
+			
+				
+footer
+	background-color: #23AC35
+	.ftcontent
+		max-width: 960px
+		margin: auto
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 82px
+		&:before,&:after
+			display: none
+			
+		.ftlogo
+			img
+				display: block
+		.footerarea
+			color: #fff
+			.footermenu
+				margin-bottom: 18px
+				ul
+					display: -webkit-inline-flex
+					display: -moz-inline-flex
+					display: -ms-inline-flex
+					display: -o-inline-flex
+					display: inline-flex
+					li
+						font-size: 14px
+						margin: 0 18px
+						a
+							color: #fff
+			.copyright
+				font-size: 10px
+				text-align: right
+
+
+	
+@media only screen and (max-width: 1024px)
+	.slider
+		.slick-arrow
+			width: 20px
+
+	.content
+		.container-fluid
+			.maincontent
+				max-width: 1300px
+				margin: 0px -15px
+				font-size: 0
+				margin-bottom: 45px
+				.leftad,.rightad
+					display: none
+				
+						
+				.centercontent
+					width: calc(100% - 40px)
+					vertical-align: top
+					margin: 0px 20px
+					.topbanner,.bottombanner
+						margin: 0px -5px
+						&:after
+							content: ""
+							display: block
+							clear: both
+						.pic
+							padding: 0px 5px
+							
+							img
+								width: 100%
+								display: block
+					.bottombanner
+						margin: 25px 35px 10px
+					.textarea
+						margin: 0px 35px
+						.text
+							padding: 0px 5px
+
+							p
+								font-size: 16px
+								line-height: 24px
+								margin-top: 3px
+								font-weight: 600
+					.showlist
+						.listbox
+							font-size: 16px
+							margin: 0px
+							&:after
+								content: ""
+								display: block
+								clear: both
+							.box
+								border: 1px solid #23AC35
+								border-radius: 10px
+								text-align: center
+								width: calc((100% - 16px) / 2)
+								padding: 0
+								&:nth-child(odd)
+									margin: 0px 8px 15px 0px
+								&:nth-child(even)
+									margin: 0px 0px 15px 8px
+					.goodscontent
+						.bottomcontent
+							.showlist
+								.listbox
+									.box
+										width: calc((100% - 16px) / 3)
+										&:nth-child(odd)
+											margin: 0
+										&:nth-child(even)
+											margin: 0
+										&:nth-child(3n+2)
+											margin: 0 5px
+
+
+
+			.topbtn
+				position: absolute
+				bottom: 10px
+				right: 10px
+				width: 43px
+				img
+					width: 100%
+
+	footer
+		.ftcontent
+			.ftlogo
+				img
+					display: block
+			.footerarea
+				color: #fff
+				.footermenu
+					margin-bottom: 18px
+					ul
+						display: -webkit-inline-flex
+						display: -moz-inline-flex
+						display: -ms-inline-flex
+						display: -o-inline-flex
+						display: inline-flex
+						li
+							font-size: 14px
+							margin: 0 8px
+							a
+								color: #fff
+					
+@media only screen and (max-width: 767px)
+	.table
+		display: none !important
+	.mobile
+		display: block
+	.open
+		height: auto !important
+	
+	.col-xs-12
+		width: 100%
+		margin-bottom: 7px
+	header
+		background: none
+		border-top: 10px solid #21AC37
+		height: auto
+		position: relative
+		.container-fluid
+			background: none
+			.row.mobile
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				justify-content: space-between
+				align-items: center
+				height: 82px
+				position: relative
+				padding: 0 15px
+				&:before,&:after
+					display: none
+				.icon
+					position: absolute
+					right: 15px
+					top: 50%
+					transform: translateY(-50%)
+			.dropdown
+				position: absolute
+				top: 100%
+				left: 0
+				width: 100%
+				background-color: #fff
+				z-index: 100
+				display: none
+				z-index: 99999
+				
+				.item-box
+					margin-bottom: 13px
+					padding: 0px 16px
+					.col-item
+						display: inline-block
+						border-right: 1px solid rgba(48,48,48,0.5)
+						padding: 0px 25px
+						margin-top: 10px
+						&:first-child
+							border-left: 1px solid rgba(48,48,48,0.5)
+						a
+							color: #000
+							font-size: 12px
+				.menu
+					background-color: rgba(33,172,55,0.1)
+					
+
+					.col-menu
+						border-bottom: 1px solid #fff
+						// display: -webkit-flex
+						// display: -moz-flex
+						// display: -ms-flex
+						// display: -o-flex
+						// display: flex
+						// justify-content: space-between
+						// align-items: center
+						position: relative
+						cursor: pointer
+						
+						
+						>a
+							color: #000
+							font-size: 18px
+							line-height: 37px
+							padding: 0px 18px
+							display: -webkit-flex
+							display: -moz-flex
+							display: -ms-flex
+							display: -o-flex
+							display: flex
+							justify-content: space-between
+							align-items: center
+							&:after
+								content: url(../images/menuicon.png)
+						ul
+							width: 100%
+							overflow: hidden
+							height: 0px
+							transition: all 1s ease
+							li
+								background-color: #fff
+								width: 100%
+								padding: 0px 18px
+								border-bottom: 1px solid rgba(33,172,55,0.1)
+								&:last-child
+									border: 0px
+								a
+									color: #000
+									font-size: 16px
+									line-height: 25px
+
+					
+	.content
+		.container-fluid
+			.maincontent
+				max-width: 1300px
+				margin: 0px -15px
+				font-size: 0
+				margin-bottom: 45px
+				.leftad,.rightad
+					display: none
+				
+						
+				.centercontent
+					width: 100%
+					vertical-align: top
+					margin: 0px 7px
+					.topbanner,.bottombanner
+						margin: 0px
+						&:after
+							content: ""
+							display: block
+							clear: both
+						.pic
+							padding: 0px
+							
+							img
+								width: 100%
+								display: block
+					.bottombanner
+						margin: 10px 0px 18px
+					.textarea
+						margin: 0px
+						.text
+							padding: 0px
+
+							p
+								font-size: 16px
+								line-height: 24px
+								margin-top: 3px
+								font-weight: 600
+			.goodslist
+				.centercontent
+					margin: 0 10px
+					width: calc(100% - 20px)
+					.showlist
+						
+						.listbox
+							font-size: 16px
+							margin: 0px
+							&:after
+								content: ""
+								display: block
+								clear: both
+							.box
+								border: 1px solid #23AC35
+								border-radius: 10px
+								text-align: center
+								width: 100%
+								padding: 0
+								&:nth-child(odd)
+									margin: 0px 0px 15px 0px
+								&:nth-child(even)
+									margin: 0px 0px 15px 0px
+					.goodscontent
+						.topcontent
+							flex-direction: column
+							.zoom-section
+								margin: 0
+								.zoom-small-image
+									a
+										img
+											width: 100%
+											height: auto
+									#cloud-zoom-big
+										display: none !important
+										
+							.goodsdescribe
+								width: 100%
+							.tab_wrapper
+								.content_wrapper
+									.tab_content
+										min-height: initial
+										p
+											img
+												width: 100%
+									.accordian_header
+										font-size: 14px
+										color: #000
+										background-color: #EAEAEA
+										.arrow
+											transform: rotate(0deg)
+											border: 0
+											background-color: transparent
+											&:before
+												content: "+"
+									.active
+										color: #000
+										&:after
+											display: none
+										.arrow
+											transform: rotate(0deg)
+											border: 0
+											margin: 0
+											&:before
+												content: "-"
+												
+							.tab
+								ul.nav
+									display: none
+								.tabcontainer
+									border: 0
+									padding: 0
+									.title
+										background-color: #EAEAEA
+										text-align: center
+										line-height: 30px
+										margin-bottom: 20px
+										display: block
+										
+									#show01
+										display: block !important
+									#show02
+										display: block !important
+									#show03
+										display: block !important
+									#show04
+										display: block !important
+									#show05
+										display: block !important
+
+						.bottomcontent
+							.showlist
+								.listbox
+									.box
+										width: 100%
+										&:nth-child(odd)
+											margin: 0
+											margin-bottom: 5px
+										&:nth-child(even)
+											margin: 0
+											margin-bottom: 5px
+										&:nth-child(3n+2)
+											margin: auto
+											margin-bottom: 5px
+										
+									
+			.goods
+				.centercontent
+					margin: 0
+					.travel_goods
+						.pic
+							width: 100%
+							overflow: hidden
+							padding: 0
+							margin-bottom: 5px
+							img
+								width: 100%
+							.img01
+								transform: translateY(-71%)
+							.img02
+								transform: translateY(-40%)
+							.img03
+								transform: translateY(-50%)
+			.contact
+				text-align: center
+
+				.centercontent
+					width: calc(100% - 14px)
+					.breadcrumb
+						margin: 0 -7px 25px
+					.form-horizontal
+
+						.form-group
+							font-size: 16px
+							display: -webkit-flex
+							display: -moz-flex
+							display: -ms-flex
+							display: -o-flex
+							display: flex
+							border-bottom: 0px
+							flex-wrap: wrap
+							margin: 0
+							&:nth-child(6)
+								border-bottom: 0px
+								margin-bottom: 20px
+							&:last-child
+								border-bottom: 0px
+							.name
+								line-height: normal
+								background-color: #fff
+								width: 100%
+								text-align: left
+								label
+									&:before
+										content: url(../images/menuicon.png)
+										margin-right: 10px
+										vertical-align: middle
+							.btn
+								width: 100%
+								background-color: #23AC35
+								border-radius: 0px
+							.inputarea
+								width: 100%
+								padding-left: 0px
+								margin: 10px 0 30px
+								display: -webkit-flex
+								display: -moz-flex
+								display: -ms-flex
+								display: -o-flex
+								display: flex
+								align-items: center
+								.form-control
+									width: 100%
+								img
+									margin-right: 10px
+								.code
+									width: calc(100% - 110px)
+					
+
+			.topbtn
+				position: absolute
+				bottom: 10px
+				right: 10px
+				width: 43px
+				img
+					width: 100%
+	footer
+		.ftcontent
+			height: initial
+			padding-top: 20px
+			display: block
+			margin-bottom: 20px
+			&:after
+				content: ""
+				display: block
+				clear: both
+				
+			.ftlogo
+				float: left
+				img
+					display: block
+			.footerarea
+				.footermenu
+					margin-bottom: 18px
+					text-align: right
+					float: right
+					ul
+						flex-direction: column
+						li
+							font-size: 14px
+							margin: 0px 0px 15px
+							a
+								color: #fff
+				.copyright
+					float: right
+					clear: both
+					
+				
+@media only screen and (max-width: 452px)
+	.content
+		.container-fluid
+			.maincontent
+				.centercontent
+					.textarea
+						margin: 0px
+						.text
+							padding: 0px
+							.texttitle
+								overflow: hidden
+								border-right: 2px solid #77e97a
+								border-radius: 3px
+								img
+									width: auto
+									height: 39px

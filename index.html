@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>歡迎光臨思達購物</title>
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.topbtn').click(function(event) {
+            $('html, body').animate({
+                'scrollTop': 0
+            })
+        });
+
+        $('button').click(function(event) {
+        	if ($('button').hasClass('tcon-transform')) {
+        		$('.dropdown').fadeIn();
+        	}else {
+        		$('.dropdown').fadeOut();
+        	}
+        	
+        });
+        $('.col-menu').click(function(event) {
+            $(this).children('ul').toggleClass('open');
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="container-fluid">
+                <div class="row item table">
+                    <div class="item-box">
+                        <div class="col-item"><a href="#">燦坤官網</a></div>
+                        <div class="col-item"><a href="#">快3網路商城</a></div>
+                        <div class="col-item"><a href="#">燦星旅遊</a></div>
+                        <div class="col-item"><a href="#">金礦咖啡</a></div>
+                    </div>
+                    <div class="item-box">
+                        <div class="col-item"><a href="#">線上開卡</a></div>
+                        <div class="col-item"><a href="#">會員中心</a></div>
+                        <div class="col-item"><a href="#">還元金查詢</a></div>
+                        <div class="col-item"><a href="#">Facebook粉絲團</a></div>
+                    </div>
+                </div>
+                <div class="row item table">
+                    <div class="logo mt5">
+                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <div class="menu mt5">
+                        <div class="col-menu">
+                            <a href="#">旅遊用品</a>
+                            <ul>
+                                <li><a href="#">旅遊舒眠</a></li>
+                                <li><a href="#">行李箱/包</a></li>
+                                <li><a href="#">旅遊收納</a></li>
+                                <li><a href="#">旅遊配件</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-menu">
+                            <a href="#">戶外用品</a>
+                            <ul>
+                                <li><a href="#">旅遊舒眠</a></li>
+                                <li><a href="#">行李箱/包</a></li>
+                                <li><a href="#">旅遊收納</a></li>
+                                <li><a href="#">旅遊配件</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-menu">
+                            <a href="#">旅遊用3C</a>
+                            <ul>
+                                <li><a href="#">旅遊舒眠</a></li>
+                                <li><a href="#">行李箱/包</a></li>
+                                <li><a href="#">旅遊收納</a></li>
+                                <li><a href="#">旅遊配件</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mobile">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <div class="icon">
+                        <button type="button" class="tcon tcon-menu--xbutterfly" aria-label="toggle menu">
+                            <span class="tcon-menu__lines" aria-hidden="true"></span>
+                            <span class="tcon-visuallyhidden">toggle menu</span>
+                        </button>
+                    </div>
+                    <div class="dropdown">
+                        <div class="item-box">
+                            <div class="col-item"><a href="#">燦坤官網</a></div>
+                            <div class="col-item"><a href="#">快3網路商城</a></div>
+                            <div class="col-item"><a href="#">燦星旅遊</a></div>
+                            <div class="col-item"><a href="#">金礦咖啡</a></div>
+                        </div>
+                        <div class="menu" id="accordion">
+                            <div class="col-menu">
+                                <a href="#" data-toggle="collapse">旅遊用品</a>
+                                <ul>
+                                    <li><a href="#">旅遊舒眠</a></li>
+                                    <li><a href="#">行李箱/包</a></li>
+                                    <li><a href="#">旅遊收納</a></li>
+                                    <li><a href="#">旅遊配件</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-menu">
+
+                                <a href="#" data-toggle="collapse">戶外用品</a>
+                                <ul>
+                                    <li><a href="#">旅遊舒眠</a></li>
+                                    <li><a href="#">行李箱/包</a></li>
+                                    <li><a href="#">旅遊收納</a></li>
+                                    <li><a href="#">旅遊配件</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-menu">
+                                <a href="#" data-toggle="collapse">旅遊用3C</a>
+                                <ul>
+                                    <li><a href="#">旅遊舒眠</a></li>
+                                    <li><a href="#">行李箱/包</a></li>
+                                    <li><a href="#">旅遊收納</a></li>
+                                    <li><a href="#">旅遊配件</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="col-item"><a href="#">線上開卡</a></div>
+                            <div class="col-item"><a href="#">會員中心</a></div>
+                            <div class="col-item"><a href="#">還元金查詢</a></div>
+                            <div class="col-item"><a href="#">Facebook粉絲團</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="slider">
+                        <div><a href="#"><img src="images/slider01.jpg" alt=""></a></div>
+                        
+                    </div>
+                </div>
+                <div class="row maincontent">
+                    <div class="leftad">
+                        <div class="toptitle">
+                            熱門旅遊推薦
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic01.jpg" alt=""></a>
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic02.jpg" alt=""></a>
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic03.jpg" alt=""></a>
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic04.jpg" alt=""></a>
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic05.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="centercontent">
+                        <div class="topbanner">
+                            <div class="col-md-3 col-sm-3 col-xs-12 pic"><a href="#"><img src="images/banner01.jpg" alt=""></a></div>
+                            <div class="col-md-3 col-sm-3 col-xs-12 pic"><a href="#"><img src="images/banner02.jpg" alt=""></a></div>
+                            <div class="col-md-3 col-sm-3 col-xs-12 pic"><a href="#"><img src="images/banner03.jpg" alt=""></a></div>
+                            <div class="col-md-3 col-sm-3 col-xs-12 pic"><a href="#"><img src="images/banner04.jpg" alt=""></a></div>
+                        </div>
+                        <div class="bottombanner">
+                            <div class="col-md-6 col-sm-6 col-xs-12 pic"><a href="#"><img src="images/banner05.jpg" alt=""></a></div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 pic"><a href="#"><img src="images/banner06.jpg" alt=""></a></div>
+                        </div>
+                        <div class="textarea">
+                            <div class="col-md-6 col-xs-6 col-xs-12 text">
+                                <div class="texttitle">
+                                    企業責任及理念
+                                </div>
+                                <a href="#"><p>『初遊』是我們創辦的初衷！
+                                    <br>旅遊的初始是什麼?是探究自身抑或是體驗人生，我們試圖在旅程中找到答案。
+                                    <br>於是乎『Start to Travel』成立了，為所有旅遊愛好者，不限旅遊形式，希望在STT內你們可以找到符合自己心意的旅遊用品，藉以完成並創造出不同於以往的旅遊體驗。</p></a>
+                            </div>
+                            <div class="col-md-6 col-xs-6 col-xs-12 text">
+                                <div class="texttitle">
+                                    企業責任及理念
+                                </div>
+                                <a href="#"><p>『初遊』是我們創辦的初衷！
+                                    <br>旅遊的初始是什麼?是探究自身抑或是體驗人生，我們試圖在旅程中找到答案。
+                                    <br>於是乎『Start to Travel』成立了，為所有旅遊愛好者，不限旅遊形式，希望在STT內你們可以找到符合自己心意的旅遊用品，藉以完成並創造出不同於以往的旅遊體驗。</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightad">
+                        <div class="toptitle">
+                            熱門旅遊推薦
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic06.jpg" alt=""></a>
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic07.jpg" alt=""></a>
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic08.jpg" alt=""></a>
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic09.jpg" alt=""></a>
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic10.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbtn">
+                    <img src="images/topbtn.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+        <footer>
+            <div class="container-fluid">
+                <div class="row ftcontent">
+                    <div class="ftlogo">
+                        <img src="images/footerlogo.png" alt="">
+                    </div>
+                    <div class="footerarea">
+                        <div class="footermenu">
+                            <ul>
+                                <li><a href="#">企業網站首頁</a></li>
+                                <li><a href="#">聯絡我們</a></li>
+                                <li><a href="#">購物須知</a></li>
+                                <li><a href="#">使用條款與須知</a></li>
+                                <li><a href="#">隱私權保護政策</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="copyright">
+                            Copyright © 2016 思達行銷 All rights reserved
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(document).on('ready', function() {
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            autoplay: true,
+            prevArrow: '<button type="button" class="slick-prev"><img src="images/prevbtn.png" alt=""></button>',
+            nextArrow: '<button type="button" class="slick-next"><img src="images/nextbtn.png" alt=""></button>'
+        });
+        $('.collapse').collapse()
+    });
+
+    ! function(n, r) {
+        "function" == typeof define && define.amd ? define(r) : "object" == typeof exports ? module.exports = r() : n.transformicons = r()
+    }(this || window, function() {
+        "use strict";
+        var n = {},
+            r = "tcon-transform",
+            t = {
+                transform: ["click"],
+                revert: ["click"]
+            },
+            e = function(n) {
+                return "string" == typeof n ? Array.prototype.slice.call(document.querySelectorAll(n)) : "undefined" == typeof n || n instanceof Array ? n : [n]
+            },
+            o = function(n) {
+                return "string" == typeof n ? n.toLowerCase().split(" ") : n
+            },
+            f = function(n, r, f) {
+                var c = (f ? "remove" : "add") + "EventListener",
+                    u = e(n),
+                    s = u.length,
+                    a = {};
+                for (var l in t) a[l] = r && r[l] ? o(r[l]) : t[l];
+                for (; s--;)
+                    for (var d in a)
+                        for (var v = a[d].length; v--;) u[s][c](a[d][v], i)
+            },
+            i = function(r) {
+                n.toggle(r.currentTarget)
+            };
+        return n.add = function(r, t) {
+            return f(r, t), n
+        }, n.remove = function(r, t) {
+            return f(r, t, !0), n
+        }, n.transform = function(t) {
+            return e(t).forEach(function(n) {
+                n.classList.add(r)
+            }), n
+        }, n.revert = function(t) {
+            return e(t).forEach(function(n) {
+                n.classList.remove(r)
+            }), n
+        }, n.toggle = function(t) {
+            return e(t).forEach(function(t) {
+                n[t.classList.contains(r) ? "revert" : "transform"](t)
+            }), n
+        }, n
+    });
+    transformicons.add('.tcon')
+    </script>
+</body>
+
+</html>

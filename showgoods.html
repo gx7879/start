@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>歡迎光臨思達購物</title>
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="http://demo.htmleaf.com/1606/201606301507/css/style.css">
+    <link rel="stylesheet" type="text/css" href="http://demo.htmleaf.com/1606/201606301507/css/animate.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>
+    <script src="http://demo.htmleaf.com/1606/201606301507/js/jquery.multipurpose_tabcontent.js"></script>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            autoplay: true,
+            prevArrow: '<button type="button" class="slick-prev"><img src="images/prevbtn.png" alt=""></button>',
+            nextArrow: '<button type="button" class="slick-next"><img src="images/nextbtn.png" alt=""></button>'
+        });
+        $(".demo").champ();
+    });
+    </script>
+    <script type="text/javascript" src="cloud-zoom.1.0.2.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.topbtn').click(function(event) {
+            $('html, body').animate({
+                'scrollTop': 0
+            })
+        });
+
+        $('button').click(function(event) {
+            if ($('button').hasClass('tcon-transform')) {
+                $('.dropdown').fadeIn();
+            } else {
+                $('.dropdown').fadeOut();
+            }
+
+        });
+        $('.col-menu').click(function(event) {
+            $(this).children('ul').toggleClass('open');
+        });
+        $('.tab .nav li').click(function(event) {
+            $('.tab .nav li').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div id="app" class="wrap">
+        <header>
+            <div class="container-fluid">
+                <div class="row item table">
+                    <div class="item-box">
+                        <div class="col-item"><a href="#">燦坤官網</a></div>
+                        <div class="col-item"><a href="#">快3網路商城</a></div>
+                        <div class="col-item"><a href="#">燦星旅遊</a></div>
+                        <div class="col-item"><a href="#">金礦咖啡</a></div>
+                    </div>
+                    <div class="item-box">
+                        <div class="col-item"><a href="#">線上開卡</a></div>
+                        <div class="col-item"><a href="#">會員中心</a></div>
+                        <div class="col-item"><a href="#">還元金查詢</a></div>
+                        <div class="col-item"><a href="#">Facebook粉絲團</a></div>
+                    </div>
+                </div>
+                <div class="row item table">
+                    <div class="logo mt5">
+                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <div class="menu mt5">
+                        <div class="col-menu">
+                            <a href="#">旅遊用品</a>
+                            <ul>
+                                <li><a href="#">旅遊舒眠</a></li>
+                                <li><a href="#">行李箱/包</a></li>
+                                <li><a href="#">旅遊收納</a></li>
+                                <li><a href="#">旅遊配件</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-menu">
+                            <a href="#">戶外用品</a>
+                            <ul>
+                                <li><a href="#">旅遊舒眠</a></li>
+                                <li><a href="#">行李箱/包</a></li>
+                                <li><a href="#">旅遊收納</a></li>
+                                <li><a href="#">旅遊配件</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-menu">
+                            <a href="#">旅遊用3C</a>
+                            <ul>
+                                <li><a href="#">旅遊舒眠</a></li>
+                                <li><a href="#">行李箱/包</a></li>
+                                <li><a href="#">旅遊收納</a></li>
+                                <li><a href="#">旅遊配件</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mobile">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <div class="icon">
+                        <button type="button" class="tcon tcon-menu--xbutterfly" aria-label="toggle menu">
+                            <span class="tcon-menu__lines" aria-hidden="true"></span>
+                            <span class="tcon-visuallyhidden">toggle menu</span>
+                        </button>
+                    </div>
+                    <div class="dropdown">
+                        <div class="item-box">
+                            <div class="col-item"><a href="#">燦坤官網</a></div>
+                            <div class="col-item"><a href="#">快3網路商城</a></div>
+                            <div class="col-item"><a href="#">燦星旅遊</a></div>
+                            <div class="col-item"><a href="#">金礦咖啡</a></div>
+                        </div>
+                        <div class="menu" id="accordion">
+                            <div class="col-menu">
+                                <a href="#" data-toggle="collapse">旅遊用品</a>
+                                <ul>
+                                    <li><a href="#">旅遊舒眠</a></li>
+                                    <li><a href="#">行李箱/包</a></li>
+                                    <li><a href="#">旅遊收納</a></li>
+                                    <li><a href="#">旅遊配件</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-menu">
+                                <a href="#" data-toggle="collapse">戶外用品</a>
+                                <ul>
+                                    <li><a href="#">旅遊舒眠</a></li>
+                                    <li><a href="#">行李箱/包</a></li>
+                                    <li><a href="#">旅遊收納</a></li>
+                                    <li><a href="#">旅遊配件</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-menu">
+                                <a href="#" data-toggle="collapse">旅遊用3C</a>
+                                <ul>
+                                    <li><a href="#">旅遊舒眠</a></li>
+                                    <li><a href="#">行李箱/包</a></li>
+                                    <li><a href="#">旅遊收納</a></li>
+                                    <li><a href="#">旅遊配件</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="col-item"><a href="#">線上開卡</a></div>
+                            <div class="col-item"><a href="#">會員中心</a></div>
+                            <div class="col-item"><a href="#">還元金查詢</a></div>
+                            <div class="col-item"><a href="#">Facebook粉絲團</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="slider">
+                        <div>
+                            <a href="#"><img src="images/slider01.jpg" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/slider01.jpg" alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/slider01.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row maincontent goodslist">
+                    <div class="leftad">
+                        <div class="toptitle">
+                            熱門旅遊推薦
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic01.jpg" alt=""></a>
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic02.jpg" alt=""></a>
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic03.jpg" alt=""></a>
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic04.jpg" alt=""></a>
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic05.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="centercontent">
+                        <ol class="breadcrumb">
+                            <li><a href="#">首頁</a></li>
+                            <li><a href="#">旅遊用品首區</a></li>
+                            <li class="active">頸枕區</li>
+                        </ol>
+                        <div class="goodscontent">
+                            <div class="row topcontent">
+                                <div class="zoom-section">
+                                    <div class="zoom-small-image">
+                                        <a href='images/bigimage00.jpg' class='cloud-zoom' id='zoom1' rel="adjustX:10, adjustY:0, zoomWidth: 580, zoomHeight: 360"><img src="images/smallimage.jpg" alt='' title="圖片標題顯示" /></a>
+                                    </div>
+                                    <div class="zoom-desc">
+                                        <h3>標準相簿模式(小圖切換)</h3>
+                                        <p>
+                                            <a href='images/bigimage00.jpg' class='cloud-zoom-gallery' title='圖1' rel="useZoom: 'zoom1', smallImage: 'images/smallimage.jpg' "><img class="zoom-tiny-image" src="images/tinyimage.jpg" alt="縮圖1" /></a>
+                                            <a href='images/bigimage01.jpg' class='cloud-zoom-gallery' title='圖2' rel="useZoom: 'zoom1', smallImage: ' images/smallimage-1.jpg'"><img class="zoom-tiny-image" src="images/tinyimage-1.jpg" alt="縮圖2" /></a>
+                                            <a href='images/bigimage02.jpg' class='cloud-zoom-gallery' title='圖3' rel="useZoom: 'zoom1', smallImage: 'images/smallimage-2.jpg' "><img class="zoom-tiny-image" src="images/tinyimage-2.jpg" alt="縮圖3" /></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--zoom-section end-->
+                                <div class="goodsdescribe">
+                                    <div class="describe">
+                                        <div class="title">
+                                            cabeau 旅行用記憶頸枕 - 藍色
+                                        </div>
+                                        <div class="intro">
+                                            美國暢銷創新旅行頸枕
+                                            <br>記憶泡棉材質支撐力好
+                                            <br>側面加高支撐脖頸舒緩壓力
+                                            <br>可收納成1/4大小
+                                        </div>
+                                        <div class="price">
+                                            參考市價 : <span class="market_price">35</span> 元
+                                            <div class="network_price">
+                                                網路優惠價 : <span>15</span> 元
+                                            </div>
+                                            <a href="#" class="btn">
+                                                立即購買
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row topcontent">
+                                <!-- <div class="tab">
+                                    <ul class="nav">
+                                        <li class="active" onclick="$('.showcontent').hide();$('#show01').show();">商品特色</li>
+                                        <li onclick="$('.showcontent').hide();$('#show02').show();">商品規格</li>
+                                        <li onclick="$('.showcontent').hide();$('#show03').show();">商品特色</li>
+                                        <li onclick="$('.showcontent').hide();$('#show04').show();">商品規格</li>
+                                        <li onclick="$('.showcontent').hide();$('#show05').show();">商品特色</li>
+                                    </ul>
+                                    <div class="tabcontainer">
+                                        <div class="title">
+                                            商品特色
+                                        </div>
+                                        <div id="show01" class="showcontent">
+                                            品　　名：Cabeau 旅行用記憶頸枕
+                                            <br>材　　質：枕頭套/棉80%、聚酯20%；枕頭/發泡PU(polyurethane)。
+                                            <br>產　　地：美國設計、授權中國製造。
+                                            <br>注意事項：枕頭套可拆下清洗，枕頭本體可用濕布擦拭表面。
+                                            <br>備　　註：商品圖檔顏色因拍照光線及每人電腦螢幕設定不同而略有差異，請以實際商品為主。
+                                        </div>
+                                        <div class="title">
+                                            商品規格
+                                        </div>
+                                        <div id="show02" class="showcontent">
+                                            品　　名：Cabeau 旅行用記憶頸枕
+                                            <br>材　　質：枕頭套/棉80%、聚酯20%；枕頭/發泡PU(polyurethane)。
+                                            <br>產　　地：美國設計、授權中國製造。
+                                            <br>注意事項：枕頭套可拆下清洗，枕頭本體可用濕布擦拭表面。
+                                            <br>備　　註：商品圖檔顏色因拍照光線及每人電腦螢幕設定不同而略有差異，請以實際商品為主。
+                                        </div>
+                                        <div class="title">
+                                            商品特色
+                                        </div>
+                                        <div id="show03" class="showcontent">
+                                            品　　名：Cabeau 旅行用記憶頸枕
+                                            <br>材　　質：枕頭套/棉80%、聚酯20%；枕頭/發泡PU(polyurethane)。
+                                            <br>產　　地：美國設計、授權中國製造。
+                                            <br>注意事項：枕頭套可拆下清洗，枕頭本體可用濕布擦拭表面。
+                                            <br>備　　註：商品圖檔顏色因拍照光線及每人電腦螢幕設定不同而略有差異，請以實際商品為主。
+                                        </div>
+                                        <div class="title">
+                                            商品規格
+                                        </div>
+                                        <div id="show04" class="showcontent">
+                                            品　　名：Cabeau 旅行用記憶頸枕
+                                            <br>材　　質：枕頭套/棉80%、聚酯20%；枕頭/發泡PU(polyurethane)。
+                                            <br>產　　地：美國設計、授權中國製造。
+                                            <br>注意事項：枕頭套可拆下清洗，枕頭本體可用濕布擦拭表面。
+                                            <br>備　　註：商品圖檔顏色因拍照光線及每人電腦螢幕設定不同而略有差異，請以實際商品為主。
+                                        </div>
+                                        <div class="title">
+                                            商品特色
+                                        </div>
+                                        <div id="show05" class="showcontent">
+                                            品　　名：Cabeau 旅行用記憶頸枕
+                                            <br>材　　質：枕頭套/棉80%、聚酯20%；枕頭/發泡PU(polyurethane)。
+                                            <br>產　　地：美國設計、授權中國製造。
+                                            <br>注意事項：枕頭套可拆下清洗，枕頭本體可用濕布擦拭表面。
+                                            <br>備　　註：商品圖檔顏色因拍照光線及每人電腦螢幕設定不同而略有差異，請以實際商品為主。
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                
+
+                                <div class="tab_wrapper demo">
+                                    <ul class="tab_list">
+                                        <li class="active">商品特色</li>
+                                        <li>商品規格</li>
+                                        <li>商品特色</li>
+                                        <li>商品規格</li>
+                                        <li>商品特色</li>
+                                    </ul>
+                                    <div class="content_wrapper">
+                                        <div class="tab_content active">
+                                            <p>
+                                                品　　名：Cabeau 旅行用記憶頸枕
+                                                <br>材　　質：枕頭套/棉80%、聚酯20%；枕頭/發泡PU(polyurethane)。
+                                                <br>產　　地：美國設計、授權中國製造。
+                                                <br>注意事項：枕頭套可拆下清洗，枕頭本體可用濕布擦拭表面。
+                                                <br>備　　註：商品圖檔顏色因拍照光線及每人電腦螢幕設定不同而略有差異，請以實際商品為主。
+                                            </p>
+                                        </div>
+                                        <div class="tab_content">
+                                            <p>
+                                                品　　名：Cabeau 旅行用記憶頸枕
+                                                <br>材　　質：枕頭套/棉80%、聚酯20%；枕頭/發泡PU(polyurethane)。
+                                                <br>產　　地：美國設計、授權中國製造。
+                                                <br>注意事項：枕頭套可拆下清洗，枕頭本體可用濕布擦拭表面。
+                                                <br>備　　註：商品圖檔顏色因拍照光線及每人電腦螢幕設定不同而略有差異，請以實際商品為主。
+                                            </p>
+                                        </div>
+                                        <div class="tab_content">
+                                            <p>
+                                                品　　名：Cabeau 旅行用記憶頸枕
+                                                <br>材　　質：枕頭套/棉80%、聚酯20%；枕頭/發泡PU(polyurethane)。
+                                                <br>產　　地：美國設計、授權中國製造。
+                                                <br>注意事項：枕頭套可拆下清洗，枕頭本體可用濕布擦拭表面。
+                                                <br>備　　註：商品圖檔顏色因拍照光線及每人電腦螢幕設定不同而略有差異，請以實際商品為主。
+                                            </p>
+                                        </div>
+                                        <div class="tab_content">
+                                            <p>
+                                                品　　名：Cabeau 旅行用記憶頸枕
+                                                <br>材　　質：枕頭套/棉80%、聚酯20%；枕頭/發泡PU(polyurethane)。
+                                                <br>產　　地：美國設計、授權中國製造。
+                                                <br>注意事項：枕頭套可拆下清洗，枕頭本體可用濕布擦拭表面。
+                                                <br>備　　註：商品圖檔顏色因拍照光線及每人電腦螢幕設定不同而略有差異，請以實際商品為主。
+                                            </p>
+                                        </div>
+                                        <div class="tab_content">
+                                            <p>
+                                                品　　名：Cabeau 旅行用記憶頸枕
+                                                <br>材　　質：枕頭套/棉80%、聚酯20%；枕頭/發泡PU(polyurethane)。
+                                                <br>產　　地：美國設計、授權中國製造。
+                                                <br>注意事項：枕頭套可拆下清洗，枕頭本體可用濕布擦拭表面。
+                                                <br>備　　註：商品圖檔顏色因拍照光線及每人電腦螢幕設定不同而略有差異，請以實際商品為主。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bottomcontent">
+                                <div class="interest">
+                                    您可能會感興趣的商品：
+                                </div>
+                                <div class="showlist">
+                                    <div class="listbox">
+                                        <div class="col-md-4 col-sm-4 box">
+                                            <div class="goodspic">
+                                                <a href="#"><img alt="" src="images/goodspic01.jpg"></a>
+                                            </div>
+                                            <div class="name" title="E-books L1 鋁製電子數位手持行李秤-附電池銀">
+                                                <a href="#">E-books L1 鋁製電子數位手持行李秤-附電池銀</a>
+                                            </div>
+                                            <div class="price">
+                                                市價:<span class="original">$35</span><span class="discount">網路價:<span>$15</span></span>
+                                            </div>
+                                            <a class="intro btn" href="#">
+                                                詳細介紹
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 box">
+                                            <div class="goodspic">
+                                                <a href="#"><img alt="" src="images/goodspic02.jpg"></a>
+                                            </div>
+                                            <div class="name" title="cabeau旅行用記憶頸枕(藍色)">
+                                                <a href="#">cabeau旅行用記憶頸枕(藍色)</a>
+                                            </div>
+                                            <div class="price">
+                                                市價:<span class="original">$35</span><span class="discount">網路價:<span>$15</span></span>
+                                            </div>
+                                            <a class="intro btn" href="#">
+                                                詳細介紹
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 box">
+                                            <div class="goodspic">
+                                                <a href="#"><img alt="" src="images/goodspic03.jpg"></a>
+                                            </div>
+                                            <div class="name" title="M Square 旅行豪華 七件套(四色)深寶藍">
+                                                <a href="#">M Square 旅行豪華 七件套(四色)深寶藍</a>
+                                            </div>
+                                            <div class="price">
+                                                市價:<span class="original">$35</span><span class="discount">網路價:<span>$15</span></span>
+                                            </div>
+                                            <a class="intro btn" href="#">
+                                                詳細介紹
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightad">
+                        <div class="toptitle">
+                            熱門旅遊推薦
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic06.jpg" alt=""></a>
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic07.jpg" alt=""></a>
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic08.jpg" alt=""></a>
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic09.jpg" alt=""></a>
+                        </div>
+                        <div class="adrecommend">
+                            <a href="#"><img src="images/adpic10.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbtn">
+                    <img src="images/topbtn.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+        <footer>
+            <div class="container-fluid">
+                <div class="row ftcontent">
+                    <div class="ftlogo">
+                        <img src="images/footerlogo.png" alt="">
+                    </div>
+                    <div class="footerarea">
+                        <div class="footermenu">
+                            <ul>
+                                <li><a href="#">企業網站首頁</a></li>
+                                <li><a href="#">聯絡我們</a></li>
+                                <li><a href="#">購物須知</a></li>
+                                <li><a href="#">使用條款與須知</a></li>
+                                <li><a href="#">隱私權保護政策</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="copyright">
+                            Copyright © 2016 思達行銷 All rights reserved
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript">
+    ! function(n, r) {
+        "function" == typeof define && define.amd ? define(r) : "object" == typeof exports ? module.exports = r() : n.transformicons = r()
+    }(this || window, function() {
+        "use strict";
+        var n = {},
+            r = "tcon-transform",
+            t = {
+                transform: ["click"],
+                revert: ["click"]
+            },
+            e = function(n) {
+                return "string" == typeof n ? Array.prototype.slice.call(document.querySelectorAll(n)) : "undefined" == typeof n || n instanceof Array ? n : [n]
+            },
+            o = function(n) {
+                return "string" == typeof n ? n.toLowerCase().split(" ") : n
+            },
+            f = function(n, r, f) {
+                var c = (f ? "remove" : "add") + "EventListener",
+                    u = e(n),
+                    s = u.length,
+                    a = {};
+                for (var l in t) a[l] = r && r[l] ? o(r[l]) : t[l];
+                for (; s--;)
+                    for (var d in a)
+                        for (var v = a[d].length; v--;) u[s][c](a[d][v], i)
+            },
+            i = function(r) {
+                n.toggle(r.currentTarget)
+            };
+        return n.add = function(r, t) {
+            return f(r, t), n
+        }, n.remove = function(r, t) {
+            return f(r, t, !0), n
+        }, n.transform = function(t) {
+            return e(t).forEach(function(n) {
+                n.classList.add(r)
+            }), n
+        }, n.revert = function(t) {
+            return e(t).forEach(function(n) {
+                n.classList.remove(r)
+            }), n
+        }, n.toggle = function(t) {
+            return e(t).forEach(function(t) {
+                n[t.classList.contains(r) ? "revert" : "transform"](t)
+            }), n
+        }, n
+    });
+    transformicons.add('.tcon')
+    </script>
+    <script>
+    var boxs = [{
+            pic: "images/goodspic01.jpg",
+            name: "E-books L1 鋁製電子數位手持行李秤-附電池銀",
+            price: "$35",
+            discount: "$15"
+        }, {
+            pic: "images/goodspic02.jpg",
+            name: "cabeau旅行用記憶頸枕(藍色)",
+            price: "$35",
+            discount: "$15"
+        }, {
+            pic: "images/goodspic03.jpg",
+            name: "M Square 旅行豪華 七件套(四色)深寶藍",
+            price: "$35",
+            discount: "$15"
+        }
+
+    ];
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            boxs
+        }
+    });
+    </script>
+    <script type="text/javascript" src="mlellipsis.min.js"></script>
+    <script type="text/javascript">
+    // $(document).ready(function() {
+    //     var name = document.getElementsByTagName("a");
+
+    //     function action() {
+    //         for (var i = 0; i < name.length; i++) {
+    //             var row = "2";
+    //             name[i].mlellipsis(row);
+    //         }
+    //     }
+    //     action();
+    // });
+    </script>
+</body>
+
+</html>
